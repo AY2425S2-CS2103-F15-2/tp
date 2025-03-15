@@ -40,7 +40,7 @@
          </padding>
          <children>
             <Label fx:id="placeholder1" styleClass="cell_small_label" text="\$placeholder1" />
-            <Label fx:id="placeholder2" styleClass="cell_small_label" text="\$placeholder2" />
+            <Label fx:id="currentYear" styleClass="cell_small_label" text="\$currentYear" />
             <Label fx:id="placeholder3" styleClass="cell_small_label" text="\$placeholder3" />
             <Label fx:id="placeholder4" styleClass="cell_small_label" text="\$placeholder4" />
             <Label fx:id="paymentFee" styleClass="cell_small_label" text="\$paymentFee" />

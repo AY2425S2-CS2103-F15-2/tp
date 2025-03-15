@@ -11,6 +11,7 @@ public class CliSyntax {
     public static final Prefix PREFIX_EMAIL = new Prefix("e/");
     public static final Prefix PREFIX_ADDRESS = new Prefix("a/");
     public static final Prefix PREFIX_TAG = new Prefix("t/");
+    public static final Prefix PREFIX_CURRENT_YEAR = new Prefix("cy/");
     // `PREFIX_PAYMENT_FEE` and `PREFIX_PAYMENT_DATE` is part of the Payment Command
     public static final Prefix PREFIX_PAYMENT_FEE = new Prefix("f/");
     public static final Prefix PREFIX_PAYMENT_DATE = new Prefix("d/");

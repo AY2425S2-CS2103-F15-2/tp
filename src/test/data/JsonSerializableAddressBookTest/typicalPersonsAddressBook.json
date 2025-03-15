@@ -5,6 +5,7 @@
     "phone" : "94351253",
     "email" : "alice@example.com",
     "address" : "123, Jurong West Ave 6, #08-111",
+    "currentYear" : "Year 3",
     "tags" : [ "friends" ],
     "paymentFee" : 0,
     "paymentDate" : ""
@@ -13,6 +14,7 @@
     "phone" : "98765432",
     "email" : "johnd@example.com",
     "address" : "311, Clementi Ave 2, #02-25",
+    "currentYear" : "Year 4",
     "tags" : [ "owesMoney", "friends" ],
     "paymentFee" : 500,
     "paymentDate" : ""
@@ -37,6 +39,7 @@
     "phone" : "9482224",
     "email" : "werner@example.com",
     "address" : "michegan ave",
+    "currentYear" : "Year 2",
     "tags" : [ ],
     "paymentFee" : 0,
     "paymentDate" : ""
@@ -45,6 +48,7 @@
     "phone" : "9482427",
     "email" : "lydia@example.com",
     "address" : "little tokyo",
+    "currentYear" : "Year 2",
     "tags" : [ ],
     "paymentFee" : 0,
     "paymentDate" : ""
@@ -53,6 +57,7 @@
     "phone" : "9482442",
     "email" : "anna@example.com",
     "address" : "4th street",
+    "currentYear" : "Year 1",
     "tags" : [ ],
     "paymentFee" : 0,
     "paymentDate" : ""
