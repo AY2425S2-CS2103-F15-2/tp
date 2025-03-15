@@ -42,7 +42,7 @@ public class PersonCard extends UiPart<Region> {
     @FXML
     private FlowPane tags;
     @FXML
-    private Label placeholder1;
+    private Label eduLevel;
     @FXML
     private Label placeholder2;
     @FXML
@@ -66,7 +66,7 @@ public class PersonCard extends UiPart<Region> {
         address.setText(person.getAddress().value);
         email.setText(person.getEmail().value);
 
-        placeholder1.setText("placeholder text 1");
+        eduLevel.setText("Education Level: " + person.getEduLevel().getEduLevel());
         placeholder2.setText("placeholder text 2");
         placeholder3.setText("placeholder text 3");
         placeholder4.setText("placeholder text 4");

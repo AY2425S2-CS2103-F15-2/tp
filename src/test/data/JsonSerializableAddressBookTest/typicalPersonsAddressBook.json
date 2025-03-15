@@ -5,6 +5,7 @@
     "phone" : "94351253",
     "email" : "alice@example.com",
     "address" : "123, Jurong West Ave 6, #08-111",
+    "eduLevel": "Bachelor",
     "tags" : [ "friends" ],
     "paymentFee" : 0,
     "paymentDate" : ""
@@ -13,6 +14,7 @@
     "phone" : "98765432",
     "email" : "johnd@example.com",
     "address" : "311, Clementi Ave 2, #02-25",
+    "eduLevel": "Bachelor",
     "tags" : [ "owesMoney", "friends" ],
     "paymentFee" : 500,
     "paymentDate" : ""
@@ -21,6 +23,7 @@
     "phone" : "95352563",
     "email" : "heinz@example.com",
     "address" : "wall street",
+    "eduLevel": "PhD",
     "tags" : [ ],
     "paymentFee" : 1250,
     "paymentDate" : "25-02-2025"
@@ -29,6 +32,7 @@
     "phone" : "87652533",
     "email" : "cornelia@example.com",
     "address" : "10th street",
+    "eduLevel": "Master",
     "tags" : [ "friends" ],
     "paymentFee" : 0,
     "paymentDate" : ""
@@ -37,6 +41,7 @@
     "phone" : "9482224",
     "email" : "werner@example.com",
     "address" : "michegan ave",
+    "eduLevel": "Bachelor",
     "tags" : [ ],
     "paymentFee" : 0,
     "paymentDate" : ""
@@ -45,6 +50,7 @@
     "phone" : "9482427",
     "email" : "lydia@example.com",
     "address" : "little tokyo",
+    "eduLevel": "Bachelor",
     "tags" : [ ],
     "paymentFee" : 0,
     "paymentDate" : ""
@@ -53,6 +59,7 @@
     "phone" : "9482442",
     "email" : "anna@example.com",
     "address" : "4th street",
+    "eduLevel": "Bachelor",
     "tags" : [ ],
     "paymentFee" : 0,
     "paymentDate" : ""

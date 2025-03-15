@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import seedu.address.commons.exceptions.IllegalValueException;
 import seedu.address.model.person.Address;
+import seedu.address.model.person.EduLevel;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.PaymentInfo;
@@ -30,6 +31,7 @@ class JsonAdaptedPerson {
     private final String phone;
     private final String email;
     private final String address;
+    private final String eduLevel;
     private final List<JsonAdaptedTag> tags = new ArrayList<>();
     private final int paymentFee;
     private final String paymentDate;
@@ -39,20 +41,22 @@ class JsonAdaptedPerson {
      */
     @JsonCreator
     public JsonAdaptedPerson(@JsonProperty("name") String name, @JsonProperty("phone") String phone,
-            @JsonProperty("email") String email, @JsonProperty("address") String address,
-            @JsonProperty("tags") List<JsonAdaptedTag> tags, @JsonProperty("paymentFee") int paymentFee,
-            @JsonProperty("paymentDate") String paymentDate) {
+                             @JsonProperty("email") String email, @JsonProperty("address") String address,
+                             @JsonProperty("eduLevel") String eduLevel,
+                             @JsonProperty("tags") List<JsonAdaptedTag> tags,
+                             @JsonProperty("paymentFee") int paymentFee,
+                             @JsonProperty("paymentDate") String paymentDate) {
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.address = address;
+        this.eduLevel = eduLevel;
         if (tags != null) {
             this.tags.addAll(tags);
         }
         this.paymentFee = paymentFee;
         this.paymentDate = Objects.requireNonNullElse(paymentDate, "");
     }
-
     /**
      * Converts a given {@code Person} into this class for Jackson use.
      */
@@ -61,6 +65,7 @@ class JsonAdaptedPerson {
         phone = source.getPhone().value;
         email = source.getEmail().value;
         address = source.getAddress().value;
+        eduLevel = source.getEduLevel().getEduLevel(); // getEduLevel() returns the value
         tags.addAll(source.getTags().stream()
                 .map(JsonAdaptedTag::new)
                 .collect(Collectors.toList()));
@@ -111,6 +116,15 @@ class JsonAdaptedPerson {
         }
         final Address modelAddress = new Address(address);
 
+        if (eduLevel == null) {
+            throw new IllegalValueException(String.format(MISSING_FIELD_MESSAGE_FORMAT,
+                    EduLevel.class.getSimpleName()));
+        }
+        if (!EduLevel.isValidEduLevel(eduLevel)) {
+            throw new IllegalValueException(EduLevel.MESSAGE_CONSTRAINTS);
+        }
+        final EduLevel modelEduLevel = new EduLevel(eduLevel);
+
         final Set<Tag> modelTags = new HashSet<>(personTags);
 
         // IF paymentFee field is missing, it will be set as 0 by default. Therefore, no checks needed.
@@ -125,7 +139,6 @@ class JsonAdaptedPerson {
         }
         final PaymentInfo paymentInfo = new PaymentInfo(paymentFee, paymentDate);
 
-        return new Person(modelName, modelPhone, modelEmail, modelAddress, modelTags, paymentInfo);
+        return new Person(modelName, modelPhone, modelEmail, modelAddress, modelEduLevel, modelTags, paymentInfo);
     }
-
 }

@@ -25,18 +25,21 @@ public class Person {
     private final Address address;
     private final Set<Tag> tags = new HashSet<>();
     private final PaymentInfo paymentInfo;
+    private final EduLevel eduLevel;
 
     /**
      * Every field must be present and not null.
      */
-    public Person(Name name, Phone phone, Email email, Address address, Set<Tag> tags, PaymentInfo paymentInfo) {
-        requireAllNonNull(name, phone, email, address, tags, paymentInfo);
+    public Person(Name name, Phone phone, Email email, Address address, EduLevel eduLevel,
+                    Set<Tag> tags, PaymentInfo paymentInfo) {
+        requireAllNonNull(name, phone, email, address, tags, paymentInfo, eduLevel);
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.address = address;
         this.tags.addAll(tags);
         this.paymentInfo = paymentInfo;
+        this.eduLevel = eduLevel;
     }
 
     public Name getName() {
@@ -53,6 +56,10 @@ public class Person {
 
     public Address getAddress() {
         return address;
+    }
+
+    public EduLevel getEduLevel() {
+        return eduLevel;
     }
 
     /**
@@ -101,7 +108,8 @@ public class Person {
                 && email.equals(otherPerson.email)
                 && address.equals(otherPerson.address)
                 && tags.equals(otherPerson.tags)
-                && paymentInfo.equals(otherPerson.paymentInfo);
+                && paymentInfo.equals(otherPerson.paymentInfo)
+                && eduLevel.equals(otherPerson.eduLevel);
     }
 
     @Override
@@ -119,6 +127,7 @@ public class Person {
                 .add("address", address)
                 .add("tags", tags)
                 .add("paymentInfo", paymentInfo)
+                .add("eduLevel", eduLevel)
                 .toString();
     }
 
