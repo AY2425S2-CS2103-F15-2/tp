@@ -2,9 +2,23 @@
 layout: page
 title: Danial's Project Portfolio Page
 ---
+## Project: TutorSynch
 
-### Project: AddressBook Level 3
+Below are my project contributions:
+
+***
+### Codebase:
+* Feature 1: Added `Current Year` field to student's information
+    * Allows tutor to store and edit the current year of the student
+    * Test different valid and invalid `[cy/CURRENT_YEAR]` data
+***
+### Documentation:
+* Developer Guide:
+    * Updated the product scope and user stories for the project
+
 <!--
+### Project: AddressBook Level 3
+
 AddressBook - Level 3 is a desktop address book application used for teaching Software Engineering principles. The user interacts with it using a CLI, and it has a GUI created with JavaFX. It is written in Java, and has about 10 kLoC.
 
 

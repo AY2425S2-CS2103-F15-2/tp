@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import seedu.address.commons.exceptions.IllegalValueException;
 import seedu.address.model.person.Address;
+import seedu.address.model.person.CurrentYear;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.PaymentInfo;
@@ -125,7 +126,7 @@ class JsonAdaptedPerson {
         }
         final PaymentInfo paymentInfo = new PaymentInfo(paymentFee, paymentDate);
 
-        return new Person(modelName, modelPhone, modelEmail, modelAddress, modelTags, paymentInfo);
+        return new Person(modelName, modelPhone, modelEmail, modelAddress, new CurrentYear(), modelTags, paymentInfo);
     }
 
 }

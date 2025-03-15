@@ -10,6 +10,7 @@ import seedu.address.commons.core.index.Index;
 import seedu.address.commons.util.StringUtil;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.person.Address;
+import seedu.address.model.person.CurrentYear;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Phone;
@@ -122,6 +123,21 @@ public class ParserUtil {
             tagSet.add(parseTag(tagName));
         }
         return tagSet;
+    }
+
+    /**
+     * Parses a {@code String currentYear} into an {@code CurrentYear}.
+     * Leading and trailing whitespaces will be trimmed.
+     *
+     * @throws ParseException if the given {@code currentYear} is invalid.
+     */
+    public static CurrentYear parseCurrentYear(String currentYear) throws ParseException {
+        requireNonNull(currentYear);
+        String trimmedCurrentYear = currentYear.trim();
+        if (!CurrentYear.isValidCurrentYear(trimmedCurrentYear)) {
+            throw new ParseException(CurrentYear.MESSAGE_CONSTRAINTS);
+        }
+        return new CurrentYear(trimmedCurrentYear);
     }
 
     /**
