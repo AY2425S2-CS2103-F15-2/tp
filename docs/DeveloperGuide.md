@@ -276,27 +276,31 @@ _{Explain here how the data archiving feature will be implemented}_
 
 Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unlikely to have) - `*`
 
-| Priority | As a …                    | I want to …                                         | So that I can…                                                                            |
-|----------|---------------------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------|
-| `* * *`  | Tutor (Beginner User)     | Add student information                             | Have all necessary student info in one place.                                             |
-| `* * *`  | Tutor (Beginner User)     | Delete student information                          | Remove outdated or incorrect records.                                                     |
-| `* * *`  | Tutor (Beginner User)     | List all student information                        | Look through an organized overview of all my students for easy reference and management.  |
-| `* *`    | Tutor (Beginner User)     | Search for student information by name              | Quickly retrieve student records that match the name.                                     |
-| `* *`    | Tutor (Beginner User)     | Sort my student information when listing            | Organize and view student records sorted based on a specific field.                       |
-| `* *`    | Tutor (Intermediate User) | Edit student information                            | Update incorrect records.                                                                 |
-| `* *`    | Tutor (Intermediate User) | Tag students into groups                            | Easily manage students by group type.                                                     |
-| `*`      | Tutor (Intermediate User) | Assign colors to groups                             | Visually differentiate student groups.                                                    |
-| `* *`    | Tutor (Expert User)       | Categorise student information                      | Better retrieve and organize relevant student data.                                       |
-| `* *`    | Tutor (Expert User)       | Compare student progress                            | Tailor lessons to individual needs.                                                       |
-| `* *`    | Tutor (Expert User)       | Perform bulk deletion of student information        | Efficiently clear outdated records and prepare for a new semester.                        |
-| `* *`    | Tutor (Expert User)       | Record student payments                             | Keep track of payments received.                                                          |
-| `* *`    | Tutor (Expert User)       | Update payment statuses                             | Know which students have outstanding fees.                                                |
-| `*`      | Tutor (Expert User)       | Export filtered views                               | Save and share specific student data for analysis, reporting, or administrative purposes. |
-| `*`      | Tutor (Expert User)       | Filter students by criteria                         | Quickly find relevant students.                                                           |
-| `*`      | Tutor (Expert User)       | Generate payment summaries                          | Have a quick overview of all payments.                                                    |
-| `*`      | Tutor (Expert User)       | Generate student progress reports                   | Share insights with students or parents.                                                  |
-| `*`      | Tutor (Expert User)       | Perform conditional deletion of student information | Efficiently clear out specific groups of student records.                                 |
-| `*`      | Tutor (Expert User)       | View student performance trends                     | Assess their progress over time.                                                          |
+| Priority | As a …                    | I want to …                                           | So that I can…                                                                            |
+|----------|---------------------------|-------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| `* * *`  | Tutor (Beginner User)     | Add student information                               | Have all necessary student info in one place.                                             |
+| `* * *`  | Tutor (Beginner User)     | Delete student information                            | Remove outdated or incorrect records.                                                     |
+| `* * *`  | Tutor (Beginner User)     | List all student information                          | Look through an organized overview of all my students for easy reference and management.  |
+| `* *`    | Tutor (Beginner User)     | Search for student information by name                | Quickly retrieve student records that match the name.                                     |
+| `* *`    | Tutor (Beginner User)     | Sort my student information when listing              | Organize and view student records sorted based on a specific field.                       |
+| `* *`    | Tutor (Intermediate User) | Edit student information                              | Update incorrect records.                                                                 |
+| `* *`    | Tutor (Intermediate User) | Tag students into groups                              | Easily manage students by group type.                                                     |
+| `* * *`  | Tutor (Intermediate User) | Assign colors to groups                               | Visually differentiate student groups.                                                    |
+| `* * *`  | Tutor (Intermediate User) | Be able to efficiently add or remove tag from student | Efficiently manage a student's tag without having to overwrite it instead.                |
+| `* * *`  | Tutor (Intermediate User) | Be able to bulk remove ALL student information        | Efficiently wipe out student records onto a clean slate.                                  |
+| `* *`    | Tutor (Intermediate User) | Be able to bulk remove certain tag from all students  | Efficiently clear outdated tags.                                                          |
+| `* *`    | Tutor (Expert User)       | Categorise student information                        | Better retrieve and organize relevant student data.                                       |
+| `* *`    | Tutor (Expert User)       | Compare student progress                              | Tailor lessons to individual needs.                                                       |
+| `* *`    | Tutor (Expert User)       | Perform bulk deletion of student information          | Efficiently clear outdated records and prepare for a new semester.                        |
+| `* *`    | Tutor (Expert User)       | Record student payments                               | Keep track of payments received.                                                          |
+| `* *`    | Tutor (Expert User)       | Update payment statuses                               | Know which students have outstanding fees.                                                |
+| `*`      | Tutor (Expert User)       | Export filtered views                                 | Save and share specific student data for analysis, reporting, or administrative purposes. |
+| `*`      | Tutor (Expert User)       | Filter students by criteria                           | Quickly find relevant students.                                                           |
+| `*`      | Tutor (Expert User)       | Generate payment summaries                            | Have a quick overview of all payments.                                                    |
+| `*`      | Tutor (Expert User)       | Generate student progress reports                     | Share insights with students or parents.                                                  |
+| `*`      | Tutor (Expert User)       | Perform conditional deletion of student information   | Efficiently clear out specific groups of student records.                                 |
+| `*`      | Tutor (Expert User)       | View student performance trends                       | Assess their progress over time.                                                          |
+| `*`      | Tutor (Beginner User)     | Be able to change to Dark/Light mode                  | See certain assigned colors easier.                                                       |
 
 ### Use cases
 
